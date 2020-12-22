@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FormularioNegocio.mx</title>
+  <link rel="stylesheet" href="css/form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <div class="row">
+	    <div class="col-md-12">
+	      <form action="data2.php" method="post">
+		        <h1> Mis datos </h1>
+		        <br>
+		        <h3 align="justify">Si te interesa ofrecer apoyo a aquella mujer que lo necesite ingresa tus datos para aparecer como lugar seguro en nuestra app</h3>
+		        <h5 align="center">Llena este formulario con los datos de tu negocio</h5>
+		        <br>
+
+            <fieldset>
+             <legend><span class="number">1</span>Datos del establecimiento</legend>
+             <label for="Nombre">Nombre:</label>
+             <input type="text" id="Nombre" name="Nombre">
+
+		          <label for="Telefono">Telefono:</label>
+		          <input type="number" id="Telefono" name="Telefono">
+
+		         	<label for="Ubicacion">Ubicacion:</label>
+		         	<input type="text" id="Ubicacion" name="Ubicacion">
+		        </fieldset>
+
+		        <fieldset>
+		        	<legend><span class="number">2</span>Foto del establecimiento</legend>
+		        	<label for="Foto">Insertar foto:</label>
+					    <input type="file" id="Foto" name="Foto">
+		        </fieldset>
+
+		        <button type="submit">Enviar</button>
+	       </form>
+	    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>interfaz</title>
+  <link rel="stylesheet" href="css/interfaz.css">
+
+</head>
+<body>
+	<div class="map-responsive">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1BJUhbpNYeTH9kp7p71GlMlLDp3Q-VqTm" width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <br>
+	<button class="bubbly-button" type='submit' id="submit">¡Ayuda!</button>
+	
+	<script type="text/javascript">
+          document.querySelector('#submit').addEventListener('click',function(){
+            let name = "Carolina Gomez Manzano";
+            let foto = "http://veronicamarquez23.com/vidrioTemplado/profile.jpg";
+            let edad = "20";
+            let url = "https://api.whatsapp.com/send?phone=523311080617&text=*Viaja Segura*%0A%0A*Nombre:*%0A" + name + "%0A*Link de fotografia:*%0A" + foto + "%0A*Edad*%0A" + edad;
+            window.open(url);
+           });
+    </script>
+</body>
+</html>
